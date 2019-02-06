@@ -11,8 +11,8 @@ public class Recursion {
         data.add(word);
       }
       if (k > 0) {
-        for (int n = 0; n < max; n++) {
-          return mAWH(k - 1, max, word + (char)n, data);
+        for (int n = 97; n < (max + 97); n++) {
+          mAWH(k - 1, max, word + (char)n, data);
         }
       }
     return data;
@@ -22,8 +22,8 @@ public class Recursion {
     System.out.println(makeAllWords(1, 1)); 
     System.out.println(makeAllWords(1, 2));
     System.out.println(makeAllWords(1, 3));
-    System.out.println(makeAllWords(1, 4));
-    System.out.println(makeAllWords(1, 5));
+    System.out.println(makeAllWords(4, 4));
+    System.out.println(makeAllWords(3, 5));
 
   }
 }
